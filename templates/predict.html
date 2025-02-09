@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        textarea { width: 80%; height: 100px; }
+        button { padding: 10px 20px; margin-top: 10px; }
+        h3 { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>Amazon Review Sentiment Analysis</h1>
+    <form action="/predict" method="post">
+        <textarea name="review" placeholder="Enter your review here...">{{ review }}</textarea><br>
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+    {% if sentiment %}
+        <h3>Sentiment: {{ sentiment }}</h3>
+    {% endif %}
+</body>
+</html>
