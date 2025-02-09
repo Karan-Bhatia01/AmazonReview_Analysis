@@ -2,7 +2,7 @@ Sentiment Analysis Web App
 📌 Overview
 This project is a Flask-based web application that predicts the sentiment (positive or negative) of a given text review. It utilizes Machine Learning (Random Forest Classifier) and TF-IDF vectorization to analyze text input and determine its sentiment.
 
-🏗️ Features
+🏗️ Features <br>
 ✔️ User-friendly web interface for sentiment prediction
 ✔️ Pre-trained Random Forest Classifier for high accuracy
 ✔️ TF-IDF vectorization for text preprocessing
