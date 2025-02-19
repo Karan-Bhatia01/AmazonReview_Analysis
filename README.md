@@ -1,53 +1,77 @@
-Sentiment Analysis Web App
-📌 Overview
-This project is a Flask-based web application that predicts the sentiment (positive or negative) of a given text review. It utilizes Machine Learning (Random Forest Classifier) and TF-IDF vectorization to analyze text input and determine its sentiment.
+# 🛒 Amazon Review Sentiment Analysis
+## 📌 Overview
+The **Amazon Review Sentiment Analysis** project leverages **Natural Language Processing (NLP)** to classify product reviews as **positive or negative**. It helps businesses analyze customer feedback and improve product quality based on user sentiment.
 
-🏗️ Features <br>
-✔️ User-friendly web interface for sentiment prediction
-✔️ Pre-trained Random Forest Classifier for high accuracy
-✔️ TF-IDF vectorization for text preprocessing
-✔️ Supports real-time predictions on new user inputs
+## 🚀 Features
+- ✅ **High Accuracy (92%)** – Trained with robust classification models.
+- 🔍 **Real-Time Sentiment Analysis** – Instant feedback processing.
+- 🌐 **Web Interface** – Built using **Flask** for easy interaction.
+- 📊 **Data Visualization** – Insights into review sentiments.
 
-🚀 How to Run
-1️⃣ Install Dependencies
-Ensure you have Python installed, then run:
+## 🛠️ Technologies Used
+- **Programming Language:** Python 🐍
+- **Libraries & Frameworks:**
+  - Pandas, NumPy – Data Processing
+  - Scikit-Learn – Machine Learning
+  - TF-IDF, Random Forest – NLP Techniques
+  - Flask – Web Application
+  - Matplotlib, Seaborn – Data Visualization
 
-bash
-Copy
-Edit
+## 📂 Project Structure
+```
+📁 AmazonReview_Analysis
+│── 📄 LICENSE
+│── 📄 README.md  # You are here! 📖
+│── 📄 app.py  # Flask Web App 🚀
+│── 📁 Datasets  # Data Files 📂
+│── 📁 models  # Trained Models 🎯
+│── 📁 src  # Source Code ⚙️
+│── 📁 templates  # HTML Templates 🖥️
+│── 📄 .gitignore
+│── 📄 requirements.txt  # Dependencies 📦
+```
+
+## 🎯 How It Works
+1. **Data Processing** – Clean and preprocess Amazon review dataset.
+2. **Feature Extraction** – Use TF-IDF vectorization.
+3. **Model Training** – Train a **Random Forest Classifier** for sentiment analysis.
+4. **Web Interface** – Users submit a review, and the system predicts the sentiment.
+
+## 🏁 Installation & Usage
+### 🔹 Prerequisites
+Ensure you have **Python 3.7+** installed.
+
+### 🔹 Installation
+```bash
+# Clone this repository
+git clone https://github.com/Karan-Bhatia01/AmazonReview_Analysis.git
+cd AmazonReview_Analysis
+
+# Install dependencies
 pip install -r requirements.txt
-2️⃣ Start the Flask App
-Run the following command:
+```
 
-bash
-Copy
-Edit
+### 🔹 Run the Web App
+```bash
 python app.py
-This will start a local web server, usually at http://127.0.0.1:5000/.
+```
 
-3️⃣ Use the Web App
-Open your browser and go to http://127.0.0.1:5000/
-Enter a text review in the input box
-Click "Predict" to get the sentiment classification
-🛠️ Project Structure
-bash
-Copy
-Edit
-📂 sentiment_analysis_project
-│── 📂 models
-│   ├── sentiment_model.pkl  # Trained Random Forest model
-│   ├── tfidf_vectorizer.pkl # TF-IDF vectorizer
-│── 📂 templates
-│   ├── predict.html         # HTML for user input & results
-│── 📜 app.py                # Flask backend
-│── 📜 requirements.txt       # Required Python libraries
-│── 📜 README.txt             # Project documentation (this file)
-📊 Machine Learning Model
-Vectorization: TF-IDF (max_features=6000)
-Model Used: Random Forest Classifier
-Performance Metrics: Accuracy, F1-score, Precision, Recall
-📝 Example Test Case
-Input:
-"I expected this product to be amazing, but while it has some great features, it also has frustrating issues that make me wonder if it was worth the money."
+## 📸 Screenshots
+🚀 *Coming Soon!* 🛍️
 
-Predicted Sentiment: (Try it yourself!)
+## 💡 Future Enhancements
+- ✅ Expand sentiment categories (neutral, mixed emotions).
+- ✅ Deploy on **AWS/GCP** for scalability.
+- ✅ Add user authentication.
+
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+Pull requests are welcome! Feel free to open an issue for any feature requests or improvements.
+
+## 📩 Contact
+👤 **Karan Bhatia**  
+📧 Email: [bhatiakaran168@gmail.com](mailto:bhatiakaran168@gmail.com)  
+🔗 GitHub: [Karan-Bhatia01](https://github.com/Karan-Bhatia01)  
+🔗 LinkedIn: [Karan Bhatia](https://www.linkedin.com/in/karan-bhatia-808a65291/)
