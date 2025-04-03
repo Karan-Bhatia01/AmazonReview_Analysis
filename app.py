@@ -3,7 +3,7 @@ import pickle
 
 app = Flask(__name__)
 
-# Load the trained model and vectorizer
+# Load the trained Model and Vectorizer
 with open(r"models/sentiment_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
 
