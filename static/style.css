@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e7e6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232f3e;
+    padding: 10px;
+    color: white;
+}
+
+.nav-logo img {
+    height: 40px;
+}
+
+.nav-search {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+}
+
+.search-button {
+    background-color: #febd68;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Sentiment Analysis Box */
+.content {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+button {
+    background-color: #febd68;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sentiment-result {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007185;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-search {
+        width: 80%;
+    }
+
+    .content {
+        width: 90%;
+    }
+}
